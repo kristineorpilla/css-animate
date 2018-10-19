@@ -1,0 +1,30 @@
+#rotate {
+  transform: rotate(45deg);
+}
+
+#skew {
+  transform: skew(45deg);
+}
+
+#all {
+  transform: rotate(90deg);
+  transform: skew(100deg);
+}
+
+@keyframes squareturn {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(270deg);}
+}
+
+#animate {
+  animation: squareturn 5s infinite;
+}
+
+@keyframes movingwords {
+  from {transform: translate(100px,0px);}
+  to {transform: translate(0px, 0px);}
+}
+
+h1, h3 {
+  animation: movingwords 2s;
+}
